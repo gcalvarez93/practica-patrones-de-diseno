@@ -1,1 +1,1 @@
-# practica-patrones-de-diseno
+# Práctica Patrones de Diseño
