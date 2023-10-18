@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableViewCell" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="AppPatronesGabriel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMo-2i-Eb9">
+                        <rect key="frame" x="21" y="16" width="278" height="368"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qql-ts-XIc">
+                                <rect key="frame" x="0.0" y="0.0" width="278" height="363"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44p-q7-FiV">
+                                <rect key="frame" x="12" y="335.66666666666669" width="254" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qql-ts-XIc" secondAttribute="bottom" constant="5" id="BhE-Cj-gcc"/>
+                            <constraint firstItem="qql-ts-XIc" firstAttribute="leading" secondItem="IMo-2i-Eb9" secondAttribute="leading" id="IoA-Pl-WYY"/>
+                            <constraint firstAttribute="trailing" secondItem="44p-q7-FiV" secondAttribute="trailing" constant="12" id="Ox2-Xo-xYf"/>
+                            <constraint firstAttribute="trailing" secondItem="qql-ts-XIc" secondAttribute="trailing" id="Q7U-l6-FMm"/>
+                            <constraint firstAttribute="bottom" secondItem="44p-q7-FiV" secondAttribute="bottom" constant="12" id="c3c-UQ-omc"/>
+                            <constraint firstItem="qql-ts-XIc" firstAttribute="top" secondItem="IMo-2i-Eb9" secondAttribute="top" id="hWV-l6-pxt"/>
+                            <constraint firstItem="44p-q7-FiV" firstAttribute="leading" secondItem="IMo-2i-Eb9" secondAttribute="leading" constant="12" id="ikn-0h-ffA"/>
+                            <constraint firstItem="qql-ts-XIc" firstAttribute="top" secondItem="IMo-2i-Eb9" secondAttribute="top" id="jEc-AU-Uk8"/>
+                            <constraint firstItem="44p-q7-FiV" firstAttribute="leading" secondItem="IMo-2i-Eb9" secondAttribute="leading" constant="12" id="qjA-Qd-xm8"/>
+                            <constraint firstItem="qql-ts-XIc" firstAttribute="leading" secondItem="IMo-2i-Eb9" secondAttribute="leading" id="sGJ-c8-nwr"/>
+                            <constraint firstAttribute="trailing" secondItem="qql-ts-XIc" secondAttribute="trailing" id="zhe-Wq-agu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="IMo-2i-Eb9" secondAttribute="bottom" constant="5" id="276-z6-izj"/>
+                    <constraint firstItem="IMo-2i-Eb9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="IM7-Du-uS7"/>
+                    <constraint firstItem="IMo-2i-Eb9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="pWf-hh-qj1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="IMo-2i-Eb9" secondAttribute="trailing" constant="5" id="xhd-YK-IIy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageCellHome" destination="qql-ts-XIc" id="esC-H8-aCJ"/>
+                <outlet property="nameCellHome" destination="44p-q7-FiV" id="8l9-i3-a8G"/>
+                <outlet property="viewCellHome" destination="IMo-2i-Eb9" id="vsG-kN-161"/>
+            </connections>
+            <point key="canvasLocation" x="-165" y="-37"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
